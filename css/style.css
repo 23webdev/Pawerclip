@@ -1,0 +1,67 @@
+:root{--bg:#0B0707;--panel:#160C0C;--red:#C1121F;--red2:#7A0B12;--gold:#F2C14E;--text:#F3ECEC;--mute:#B9A9A9;--line:#2A1717}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.cine{font-family:Cinzel,Georgia,serif;letter-spacing:.02em}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#0B0707ee,#0B070700);backdrop-filter:blur(4px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700}
+.brand span.mark{width:42px;height:42px;border-radius:10px;background:url(../images/pawer-clip-logo.jpg) center/cover;box-shadow:0 0 0 1px #3a1b1b}
+.brand b{font-family:Cinzel,serif;font-size:20px;letter-spacing:.06em;white-space:nowrap}
+.links{display:flex;gap:28px;font-size:14px;font-weight:600;color:var(--mute)}.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 24px;font-weight:700;font-size:15px;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-red{background:linear-gradient(135deg,var(--red),var(--red2));box-shadow:0 10px 30px -10px #c1121f99}.btn-red:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px #c1121fcc}
+.btn-ghost{border:1.5px solid #ffffff3a}.btn-ghost:hover{background:#ffffff12}
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;padding:140px 0 90px;background:#070404 url(../images/pawer-clip-logo.jpg) right -620px center/auto 115% no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070404 0%,#070404e6 38%,#07040433 75%),linear-gradient(180deg,transparent 60%,#0B0707 100%)}
+@media (max-width:900px){.hero{background-position:70% 20%;background-size:auto 70%}.hero:before{background:linear-gradient(180deg,#07040455 0%,#070404d9 45%,#0B0707 100%)}}
+.hero .wrap{position:relative}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid #f2c14e55;border-radius:999px;padding:6px 14px;margin-bottom:20px}
+.hero h1{font-family:Cinzel,serif;font-weight:900;font-size:clamp(46px,8vw,96px);line-height:.95;text-shadow:0 6px 30px #000}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);color:#e9dede;max-width:560px;margin:18px 0 30px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:flex;gap:42px;margin-top:46px;flex-wrap:wrap}
+.stats div b{display:block;font-family:Cinzel,serif;font-size:34px;color:var(--gold);line-height:1}.stats div span{font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.12em}
+/* sections */
+section{padding:96px 0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+h2{font-family:Cinzel,serif;font-size:clamp(30px,4.4vw,48px);line-height:1.1;margin:10px 0 16px}
+.sub{color:var(--mute);max-width:620px}
+.feature{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:56px;align-items:center;margin-top:48px}
+.poster{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -20px #000,0 0 0 1px var(--line)}
+.poster .badge{position:absolute;top:14px;left:14px;background:var(--red);font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px;letter-spacing:.06em}
+.play{position:absolute;inset:auto 0 0 0;padding:70px 18px 18px;background:linear-gradient(transparent,#000c);display:flex;align-items:center;gap:12px;font-weight:600}
+.play i{width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.play i:after{content:"";border-left:14px solid var(--red);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.feature h3{font-family:Cinzel,serif;font-size:clamp(26px,3.4vw,40px);line-height:1.15}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 20px}.meta span{font-size:13px;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 12px;color:#ddd}
+.eps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:48px}
+.ep{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 20px;transition:border-color .2s,transform .2s}
+.ep:hover{border-color:var(--red);transform:translateY(-3px)}
+.ep small{color:var(--gold);font-weight:700;letter-spacing:.14em;font-size:11px}.ep b{display:block;font-family:Cinzel,serif;font-size:20px;margin:6px 0 4px}.ep p{color:var(--mute);font-size:14px}
+.why{background:linear-gradient(180deg,var(--bg),#140808 40%,var(--bg))}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px}
+.card .ic{width:46px;height:46px;border-radius:12px;background:#c1121f22;color:var(--red);display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+.card h4{font-size:18px;margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
+.join{text-align:center;background:radial-gradient(ellipse at center,#5a0b10 0,var(--bg) 70%)}
+.join .avatar{width:96px;height:96px;border-radius:22px;margin:0 auto 22px;background:url(../images/pawer-clip-logo.jpg) center/cover;box-shadow:0 0 0 1px #3a1b1b,0 20px 50px -10px #c1121f80}
+.join .sub{margin:0 auto 30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.reel{position:relative;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:var(--panel);box-shadow:0 0 0 1px var(--line);transition:transform .2s,box-shadow .2s}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.reel:hover{transform:translateY(-4px);box-shadow:0 0 0 1px var(--red),0 20px 40px -18px #c1121f99}.reel:hover img{transform:scale(1.05)}
+.reel .rplay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#000a;border:2px solid #fff;display:grid;place-items:center;opacity:.9}
+.reel .rplay i{border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
+.reel .rt{position:absolute;inset:auto 0 0 0;padding:44px 12px 12px;background:linear-gradient(transparent,#000d);font-weight:700;font-size:14px;line-height:1.3}
+.more{text-align:center;margin-top:34px}
+@media (max-width:900px){.reels{grid-template-columns:repeat(2,1fr);gap:12px}.reel .rplay{width:46px;height:46px}}
+@media (max-width:900px){.links{display:none}.feature{grid-template-columns:1fr;gap:30px}.poster{max-width:360px}.eps{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}section{padding:72px 0}.hero{min-height:86vh;padding-bottom:64px}}
+@media (max-width:480px){.stats{gap:26px}.btn{width:100%;justify-content:center}nav .btn{width:auto;padding:9px 14px;font-size:12.5px;white-space:nowrap}.brand b{font-size:16px}.brand span.mark{width:34px;height:34px}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}

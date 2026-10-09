@@ -9,3 +9,4 @@ images/        logo, series poster and reel thumbnails
 
 Buttons link to the Pawer Clip Facebook page and reels.
 Fonts (Cinzel + Inter) load from Google Fonts.
+<img src="https://t.bkit.co/w_6ac867bb46f79.gif" />
